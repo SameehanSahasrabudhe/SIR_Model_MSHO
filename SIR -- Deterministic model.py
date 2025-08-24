@@ -41,7 +41,7 @@ def rk4(SIR_model, S_values, I_values, R_values, t0, tf, dt, beta, gamma, N):
     return t,S,I,R
 
 
-S_values = 198  # 90% susceptible
+S_values = 1998  # 90% susceptible
 I_values = 2  # 10% infected
 R_values = 0   # initially - 0 recovery
 N = S_values+I_values
@@ -62,6 +62,7 @@ plt.plot(t, I, "red")
 plt.plot(t, R, "green")
 plt.xlabel("time")
 plt.ylabel("population")
-#plt.legend()
+plt.legend()
 plt.show()
+
 
